@@ -36,8 +36,7 @@ export const orderLoadFailed = () => {
     }
 }
 export const fetchOrders = (token, userId) => dispatch => {
-    let url = process.env.REACT_APP_BACKEND_URL
-    axios.get(`http://127.0.0.1:8000/api/order/`, {
+    axios.get(`http://127.0.0.1:8000/api/order/?id=${userId}`, {
         headers: {
             "Authorization": `Bearer ${token}`
         }
