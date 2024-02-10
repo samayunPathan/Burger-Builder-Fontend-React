@@ -16,7 +16,7 @@ const Header = props => {
         links = (
             <Nav className="mr-md-5">
                 <NavItem>
-                    <NavLink exact to="/login" className="NavLink">Login</NavLink>
+                   {/* <NavLink exact to="/login" className="NavLink">Login</NavLink> */}
                 </NavItem>
             </Nav>
         )
