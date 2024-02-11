@@ -1,7 +1,7 @@
 
 # Burger Builder: A React and Django REST API E-commerce App
 
-Burger Builder is a full-fledged e-commerce application built with React for the frontend and Django REST API for the backend, powered by a PostgreSQL database. It allows users to create accounts, customize burgers, place orders, and manage user accounts.
+Burger Builder is a full-fledged e-commerce application built with React for the frontend and Django REST API for the backend, using PostgreSQL database. It allows users to create accounts, customize burgers, place orders, and manage user accounts.
 
 
 ## Features
