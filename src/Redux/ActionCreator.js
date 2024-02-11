@@ -35,12 +35,14 @@ export const orderLoadFailed = () => {
         type: actionTypes.ORDER_LOAD_FAILED
     }
 }
+
 export const fetchOrders = (token, userId) => dispatch => {
-    axios.get(`http://127.0.0.1:8000/api/order/?id=${userId}`, {
-        headers: {
-            "Authorization": `Bearer ${token}`
-        }
-    })
+    const header={
+    headers: {
+        "Authorization": `Bearer ${token}`
+    }}
+    axios.get(`http://127.0.0.1:8000/api/order/?id=${userId}`,header)
+    
         .then(response => {
             dispatch(loadOrders(response.data))
         })
